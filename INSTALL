@@ -1,0 +1,51 @@
+Esthera - INSTALL
+=================
+
+Esthera comes with hand-written Makefiles. The paths to CUDA/OpenCL includes
+and libraries needs to be indicated. We will improve this later.
+
+Currently, Esthera has only been tested under Linux.
+
+
+Retrieving Esthera
+------------------
+
+To grab a copy of the Esthera repository into a (new) directory 'esthera', run:
+
+        git clone https://github.com/alxames/esthera.git esthera
+
+
+Build Instructions
+------------------
+
+	cd src/partfilt/cuda
+	make
+	cd ../opencl
+	make
+
+There are no test cases and install/uninstall at the moment.
+
+
+Dependencies
+------------
+
+	gcc/g++ or llvm/clang
+	make
+
+
+For CUDA runs, you need a recent NVIDIA GPU driver and CUDA SDK.
+
+For OpenCL runs, you need to have set up:
+	/etc/OpenCL/vendors/*.icd
+	libOpenCL.so
+	platform specific runtime libraries
+
+For x86(-64) CPUs, we recommend Intels' OpenCL SDK. AMD's APP SDK works too,
+but is slower with Esthera.
+For running OpenCL code on NVIDIA GPUs, install a recent CUDA SDK and driver.
+For AMD GPUs, install the a recent APP SDK and driver.
+We have not tried to run the OpenCL code on other hardware platforms.
+
+You need to indicate the installed include and library paths in the Makefile.
+We will supply more user friendly package auto-configuration scripts later.
+

@@ -1,0 +1,38 @@
+Esthera - README
+================
+
+Esthera is a software toolkit to prototype fast particle filters on multi-
+core hardware platforms.
+
+The particle filter is a Bayesian estimation technique based on Monte Carlo
+simulation. It is ideal for state estimation in non-linear, non-Gaussian
+dynamical systems. New algorithmic variants are still being researched and
+there are many ways to trade-off estimation accuracy vs. execution speed.
+Esthera has been developed to compare algorithmic variants and research their
+performance trade-offs.
+
+Esthera grew out of a research cooperation at Delft University of Technology,
+The Netherlands, and is still under development. Not all developed sources and
+tools have been released yet, and the released code needs additional cleanup
+and at least one easy to run, insightful example to be useful to others.
+
+If you are interested in using Esthera, or have a question or bug to report,
+please contact us (see CONTRIBUTING).
+
+
+Source code is available at https://github.com/alxames/esthera
+
+
+Esthera Project Contents
+------------------------
+
+INSTALL
+COPYING				The license text.
+CONTRIBUTING			How to contact us and/or submit contributions.
+README				This file.
+
+src/partfilt/cuda		The CUDA sources of the particle filter.
+src/partfilt/opencl		Idem, but with OpenCL.
+src/models/robotarm		Robotic arm model-specific code and input.
+src/models/unicycle		Idem, but for the unicycle model.
+

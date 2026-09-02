@@ -1,10 +1,8 @@
 Esthera - INSTALL
 =================
 
-Esthera comes with hand-written Makefiles. The paths to CUDA/OpenCL includes
-and libraries needs to be indicated. We will improve this later.
-
-Currently, Esthera has only been tested under Linux.
+Esthera comes with handwritten Makefiles. Currently, the paths to CUDA/OpenCL
+includes and libraries must be indicated.
 
 
 Retrieving Esthera
@@ -23,7 +21,7 @@ Build Instructions
 	cd ../opencl
 	make
 
-There are no test cases and install/uninstall at the moment.
+There are no test cases and install/uninstall targets at the moment.
 
 
 Dependencies
@@ -32,8 +30,7 @@ Dependencies
 	gcc/g++ or llvm/clang
 	make
 
-
-For CUDA runs, you need a recent NVIDIA GPU driver and CUDA SDK.
+For CUDA runs, you need an NVIDIA GPU and the CUDA SDK.
 
 For OpenCL runs, you need to have set up:
 	/etc/OpenCL/vendors/*.icd

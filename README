@@ -36,3 +36,25 @@ src/partfilt/opencl		Idem, but with OpenCL.
 src/models/robotarm		Robotic arm model-specific code and input.
 src/models/unicycle		Idem, but for the unicycle model.
 
+
+Publications
+------------
+
+M. Chitchian, A. S. van Amesfoort, A. Simonetto, T. Keviczky, and H. J. Sips.
+Adapting Particle Filter Algorithms to Many-Core Architectures. In IEEE 27th
+International Symposium on Parallel and Distributed Processing, pp. 427-438,
+2013.
+URL: https://doi.org/10.1109/IPDPS.2013.88
+URL (open): https://web.archive.org/web/20170922000719id_/http://ens.ewi.tudelft.nl/pubs/andrea13ipdps.pdf
+
+M. Chitchian, A. Simonetto, A. S. van Amesfoort, and T. Keviczky.
+Distributed Computation Particle Filters on GPU Architectures for Real-Time
+Control Applications. In IEEE Transactions on Control Systems Technology,
+21(6):2224-2238, 2013.
+URL: https://doi.org/10.1109/TCST.2012.2234749
+
+M. Chitchian, A. S. van Amesfoort, A. Simonetto, T. Keviczky, and H. J. Sips.
+Particle Filters on Multi-Core Processors. Technical Report PDS-2012-001,
+Delft University of Technology, 2012.
+URL (open): https://resolver.tudelft.nl/uuid:2c0e474c-f37e-4033-be8b-6a76ec940248
+
